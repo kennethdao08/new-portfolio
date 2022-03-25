@@ -1,32 +1,26 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Intro from './components/Intro';
+import About from './components/About';
+import ProjectCard from "./components/ProjectCard";
 
 function App() {
   return (
     <div className="App">
       <div className="Intro">
-        <h1>Kenneth Dao</h1>
-        <p>Description is here</p>
-        <button>Link me to LinkedIn</button>
+        <Intro name={"Kenneth Dao"} desc={"Description here"} btnDesc={"Link to here"} url={"/"}/>
       </div>
       <div className='About'>
-        <h1>About Me</h1>
-        <p>Description here</p>
+        <About desc={"Desc goes here"} />
       </div>
       <div className='Projects'>
         <h1>Projects</h1>
         <ul>
           <li>
-            <h3>Project1</h3>
-            <p>Project Description</p>
-            <button>code</button>
-            <button>source</button>
+            <ProjectCard projectName={"this project"} desc={"here is desc"}/>
           </li>
           <li>
-            <h3>Project2</h3>
-            <p>Project Description</p>
-            <button>code</button>
-            <button>source</button>
+            <ProjectCard projectName={"example proj 2"} desc={"prob make a list and create these components on the fly"} />
           </li>
         </ul>
       </div>
