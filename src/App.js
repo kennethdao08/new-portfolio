@@ -3,6 +3,7 @@ import './App.css';
 import Intro from './components/Intro';
 import About from './components/About';
 import ProjectCard from "./components/ProjectCard";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -87,11 +88,7 @@ function App() {
         </ul>
       </div>
       <div className='Footer'>
-        <ul>
-          <h4>Socials</h4>
-          <li>linked in</li>
-          <li>github</li>
-        </ul>
+        <Footer title={"Socials"} />
       </div>
     </div>
   );
