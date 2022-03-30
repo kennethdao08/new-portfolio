@@ -4,6 +4,8 @@ import Intro from './components/Intro';
 import About from './components/About';
 import ProjectCard from "./components/ProjectCard";
 import Footer from "./components/Footer";
+import ListItem from "./components/ListItem";
+import TechCard from "./components/TechCard";
 
 function App() {
   return (
@@ -28,56 +30,10 @@ function App() {
       <div className='Technologies'>
         <h1>Technologies</h1>
         <ul>
-          <li>
-            <h3>Languages</h3>
-            <ul>
-              <li>
-                Python
-              </li>
-              <li>
-                Javascript
-              </li>
-              <li>
-                Java
-              </li>
-              <li>
-                C++
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h3>Front-End</h3>
-            <ul>
-              <li>
-                React.js
-              </li>
-              <li>
-                Next.js
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h3>Back-End</h3>
-            <ul>
-              <li>
-                MongoDB
-              </li>
-              <li>
-                MySQL
-              </li>
-              <li>
-                Firebase
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h3>Other Tools</h3>
-            <ul>
-              <li>
-                Linux/Unix
-              </li>
-            </ul>
-          </li>
+            <TechCard examples={["Python", "Java", "Javascript", "C++", "Kotlin"]} title={"Languages"} />
+            <TechCard examples={["Node.js", "React.js", "Next.js"]} title={"Front-End"} />
+            <TechCard examples={["MongoDB", "MySQL", "Firebase"]} title={"Back-End"} />
+            <TechCard examples={["Linux/Unix"]} title={"Other Tools"} />
         </ul>
       </div>
       <div className='Acheivements'>
