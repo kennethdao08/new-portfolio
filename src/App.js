@@ -6,6 +6,7 @@ import ProjectCard from "./components/ProjectCard";
 import Footer from "./components/Footer";
 import ListItem from "./components/ListItem";
 import TechCard from "./components/TechCard";
+import Acheivements from "./components/Acheivements";
 
 function App() {
   return (
@@ -37,11 +38,7 @@ function App() {
         </ul>
       </div>
       <div className='Acheivements'>
-        <h1>Acheivements</h1>
-        <ul>
-          <li>2017</li>
-          <li>2018</li>
-        </ul>
+        <Acheivements />
       </div>
       <div className='Footer'>
         <Footer title={"Socials"} />
