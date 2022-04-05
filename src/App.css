@@ -1,17 +1,30 @@
+body {
+  background-color: #313146;
+}
 .App {
-  text-align: center;
+  padding: 5em;
+  margin-left: 30%;
+  margin-right: 15%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Intro {
+  background: grey;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h3, h4, p {
+  color: white;
+  display: block;
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: white;
+}
+
 
 .App-header {
   background-color: #282c34;

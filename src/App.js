@@ -12,9 +12,11 @@ function App() {
   return (
     <div className="App">
       <div className="Intro">
-        <Intro name={"Kenneth Dao"} desc={"Description here"} btnDesc={"Link to here"} url={"/"}/>
+        <h1>Kenneth Dao</h1>
+        <Intro desc={"Description here"} btnDesc={"Link to here"} url={"/"}/>
       </div>
       <div className='About'>
+        <h1>About Me</h1>
         <About desc={"Desc goes here"} />
       </div>
       <div className='Projects'>
