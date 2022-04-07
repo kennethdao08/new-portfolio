@@ -25,6 +25,14 @@ li {
   color: white;
 }
 
+a {
+  padding: 2rem;
+}
+
+a:visited {
+  color: greenyellow;
+}
+
 
 .App-header {
   background-color: #282c34;

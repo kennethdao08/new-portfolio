@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <div className="Intro">
         <h1>Kenneth Dao</h1>
-        <Intro desc={"Description here"} btnDesc={"Link to here"} url={"/"}/>
+        <Intro desc={"Description here"} btnDesc={"Link to here"} url={"https://www.example.com"}/>
       </div>
       <div className='About'>
         <h1>About Me</h1>
@@ -23,10 +23,10 @@ function App() {
         <h1>Projects</h1>
         <ul>
           <li>
-            <ProjectCard projectName={"this project"} desc={"here is desc"}/>
+            <ProjectCard projectName={"this project"} desc={"here is desc"} codeLink={"https://www.example.com"} sourceLink={"https://www.google.com"}/>
           </li>
           <li>
-            <ProjectCard projectName={"example proj 2"} desc={"prob make a list and create these components on the fly"} />
+            <ProjectCard projectName={"example proj 2"} desc={"prob make a list and create these components on the fly"} codeLink={"https://www.example.com"} sourceLink={"https://www.google.com"}/>
           </li>
         </ul>
       </div>

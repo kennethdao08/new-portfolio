@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 function ProjectCard(props) {
     return (
@@ -6,8 +7,8 @@ function ProjectCard(props) {
             <h3>{props.projectName}</h3>
             {/* // image goes here */}
             <p>{props.desc}</p>
-            <button>code</button>
-            <button>source</button>
+            <Button name={"Code"} url={props.codeLink} />
+            <Button name={"Source"} url={props.sourceLink} />
         </div>
 
     );
