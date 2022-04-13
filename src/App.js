@@ -7,8 +7,14 @@ import Footer from "./components/Footer";
 import ListItem from "./components/ListItem";
 import TechCard from "./components/TechCard";
 import Acheivements from "./components/Acheivements";
+import { projects } from "./constants/constants";
 
 function App() {
+  let projectElements = projects.map(({id, image, title, description, tags, source, visit}) => (
+    <li>
+      <ProjectCard projectName={title} id={id} desc={description} codeLink={visit} sourceLink={source} />
+    </li>
+  ));
   return (
     <div className="App">
       <div className="Intro">
@@ -22,12 +28,7 @@ function App() {
       <div className='Projects'>
         <h1>Projects</h1>
         <ul>
-          <li>
-            <ProjectCard projectName={"this project"} desc={"here is desc"} codeLink={"https://www.example.com"} sourceLink={"https://www.google.com"}/>
-          </li>
-          <li>
-            <ProjectCard projectName={"example proj 2"} desc={"prob make a list and create these components on the fly"} codeLink={"https://www.example.com"} sourceLink={"https://www.google.com"}/>
-          </li>
+          {projectElements}
         </ul>
       </div>
       <div className='Technologies'>

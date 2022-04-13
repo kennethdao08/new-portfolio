@@ -1,0 +1,38 @@
+export const projects = [
+    {
+      title: 'Zotfit',
+      description: "Using Kotlin, YelpAPI, and Firebase to build an application to recommend users restaurants. The application takes user parameters and adjusts recommendations accordingly.",
+        image: '/images/New Zotfit.png',
+        tags: ['Kotlin', 'YelpAPI', 'Firebase', 'Android Studio'],
+      source: 'https://github.com/kennethdao08/CS125-Project-Team21',
+      visit: 'https://github.com/kennethdao08/CS125-Project-Team21',
+      id: 0,
+    },
+    {
+      title: 'Zotflix',
+      description:"Developed a web application with Java servlets and MySQL. Implemented the frontend with Jquery with the data retrieved from the backend. Utilized connection pooling to improve query speeds.",
+      image: '/images/Zotflix.png',
+      tags: ['Jquery', 'JavaScript', 'MySql', 'Servlets'],
+      source: 'https://github.com/kennethdao08/CS-122B-Project',
+      visit: 'https://github.com/kennethdao08/CS-122B-Project',
+      id: 1,
+    },
+    {
+      title: 'Clothing E-Commerce',
+      description: "Created a full-fledged e-commerce web application with user account creation, authentications, and transactions. Used react to implement custom components according to best designs. Secure user data with Stripe and Firebase integration.",
+        image: '/images/ecommerce.png',
+        tags: ['React', 'Javascript', 'Firebase'],
+      source: 'https://crwn-proj-live.herokuapp.com/',
+      visit: 'https://github.com/kennethdao08/crwn-clothing',
+      id: 2,
+    },
+    {
+      title: 'Camp Forums',
+      description: "A forum web app for users to share their camping experiences. Users are able to browse, comment, and post their experiences.",
+      image: '/images/Camp Forums.png',
+      tags: ['Express', 'Passport', 'MongoDB', 'RESTful'],
+      source: 'https://yelpcamp-kd.herokuapp.com/',
+      visit: 'https://github.com/kennethdao08/YelpCamp',
+      id: 3,
+    },
+  ];
